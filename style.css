@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    position: fixed !important;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    transition: 0.6s;
+    padding: 20px 0;
+    font-family: 'Inter', sans-serif;
+    z-index: 1000;
+}
+
+nav.sticky {
+    background: rgb(25, 25, 27);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.26);
+}
+
+nav div {
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* STYLE CONTAINER GERAL*/
+.contaneir {
+    height: 100%;
+    width: 100%;
+    background: black;
+    font-family: 'Inter', sans-serif;
+}
+/*
+STYLE CONTAINER INICIO
+*/
+#container-inicio {
+    background: url(./img/image\ 3.png);
+    background-size: cover;
+    align-items: center;
+    display: flex;
+}
+
+.text-introducao {
+    margin-left: 50px;
+    color: white;
+}
+
+.text-introducao h2 {
+    font-size: 70px;
+    line-height: 85px;
+}
+
+.text-introducao h1 {
+    font-size: 110px;
+    line-height: 133px;
+    margin-bottom: 18px;
+}
+
+.text-introducao a {
+    width: 250px;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    border: solid 2px white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: .25s ease-out;
+    cursor: pointer;
+}
+
+.text-introducao iframe {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    transition: .25s ease-out;
+    cursor: pointer;
+}
+
+.text-introducao a:hover {
+    color: black;
+    background: white;
+    transition: .25s ease-out;
+}
+
+.text-introducao a:hover iframe {
+    filter: invert(100%);
+    transition: .25s ease-out;
+    cursor: pointer;
+}
+/*
+STYLE CONTAINER SOBRE
+*/
+#container-sobre {
+    height: auto;
+    background: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 8% 0 3% 0;
+}
+
+#container-sobre h1 {
+    font-size: 50px;
+    border: dashed 2px grey;
+    width: 170px;
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+#foto {
+    width: 23%;
+    min-width: 300px;
+    margin: 50px;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+.sobre-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.sobre-text {
+    text-align: left;
+    width: 65%;
+}
+
+.sobre-text h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+
+}
+
+.sobre-text p {
+    text-align: justify;
+    font-size: 18px;
+}
+.sobre-qualidades{
+    width: 100%;
+}
+.sobre-qualidades h2{
+    font-size: 45px;
+    padding: 5px 0 ;
+    color: white;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+    margin: 0 auto 30px auto;
+}
+.sobre-qualidades-caract
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-qualidades-caract a{
+    font-size: 20px;
+    margin: 10px 20px;
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+  
+}
+
+.sobre-qualidades a:hover{
+    background: grey !important;
+}
+
+
+/*
+STYLE FORMAÇÃO
+*/
+
+.formacao{
+    background: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: black;
+    padding: 0 0 150px 0;
+}
+
+.formacao h1{
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+
+.formacao-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formacao-div a{
+    text-align: center;
+    height: 250px;
+    margin: 90px 20px;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    background: rgb(27, 27, 27);
+    padding: 20px;
+    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin:center;
+    transform:perspective(800px) rotateY(25deg);
+    transition: .3s;
+}
+.formacao-div:hover a {
+    opacity:0.3;
+  }
+
+.formacao-div a:hover{
+    background: black;
+    transform:perspective(800px)       rotateY(0deg);
+    opacity:1;
+    transition: .3s;
+}
+
+.formacao-div a img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/*
+STYLE CONTAINER HABILIDADES
+*/
+
+
