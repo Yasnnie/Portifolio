@@ -83,6 +83,7 @@ STYLE CONTAINER INICIO
     font-size: 110px;
     line-height: 133px;
     margin-bottom: 18px;
+    color: orangered;
 }
 
 .text-introducao a {
@@ -110,13 +111,13 @@ STYLE CONTAINER INICIO
 }
 
 .text-introducao a:hover {
-    color: black;
+    color: orangered;
     background: white;
     transition: .25s ease-out;
 }
 
 .text-introducao a:hover iframe {
-    filter: invert(100%);
+    filter: invert(64%) sepia(28%) saturate(7483%) hue-rotate(346deg) brightness(94%) contrast(85%);
     transition: .25s ease-out;
     cursor: pointer;
 }
@@ -138,6 +139,7 @@ STYLE CONTAINER SOBRE
 #titulo {
     text-align: center;
     position: relative;
+    color: orangered;
     z-index: 30000;
     font-size: 50px;
     border: dashed 2px rgb(0, 0, 0);
@@ -166,7 +168,7 @@ STYLE CONTAINER SOBRE
 
 #circle2 {
     clip-path: circle(20% at 0) !important;
-    background: grey!important;
+    background: rgb(255, 154, 118)!important;
 }
 
 .background {
@@ -229,7 +231,7 @@ STYLE CONTAINER SOBRE
 .sobre-qualidades-caract p {
     font-size: 20px;
     margin: 10px 20px;
-    background: black;
+    background: orangered;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -308,9 +310,9 @@ STYLE CONTAINER HABILIDADES
 #container-habilidades h1{
     text-align: center;
     position: relative;
-    z-index: 30000;
+    z-index: 300;
     font-size: 50px;
-    color: grey;
+    color: orangered;
     border: dashed 2px grey;
     width: 300px;
     margin: 50px auto 20px auto;
@@ -318,7 +320,7 @@ STYLE CONTAINER HABILIDADES
 #container-habilidades p{
     font-size: 20px;
     margin-bottom: 50px;
-    color: grey;
+    color: orangered;
 }
 .habilidades-container{
     display: flex;
@@ -328,15 +330,15 @@ STYLE CONTAINER HABILIDADES
 }
 .habilidades-box {
     background: rgb(32, 32, 32);
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 20px;
-    border-top: solid 8px grey;
+    border-top: solid 8px orangered;
 
 }
 
@@ -365,7 +367,7 @@ STYLE CONTAINER HABILIDADES
 }
 
 .habilidades-box:hover{
-    background: grey;
+    background: orangered;
     transition: .5s;
 }
 
@@ -373,5 +375,98 @@ STYLE CONTAINER HABILIDADES
     opacity: 1;
     margin-top: 40px;
     transition: 0.5s;
+}
+
+/*
+PROJETOS
+*/
+
+#contaneir-projetos{
+    height: auto !important;
+}
+
+#projeto-titulo{
+    z-index: 4;
+    position: absolute;
+    right: 15%;
+    margin-top: 10%;
+    font-size: 50px;
+    padding: 10px;
+    color: orangered;
+    border: dashed 2px grey;
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    clip-path: circle(0% at 0 50%);
+}
+.slide.active-slide{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+.slide img{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    clip-path: polygon(0 0, 64% 0, 41% 100%, 0% 100%);
+}
+
+.slide .slide-info {
+    position: absolute;
+    z-index: 400;
+    bottom: 25%;
+    right: 30px;
+    color:#ffff;
+    background: rgb(0, 0, 0,0.4);
+    width: 40%;
+    padding: 20px 30px;
+
+}
+
+.slide .slide-info h2{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.slide .slide-info p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.slide .slide-info a{
+    
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: orangered;
+    padding:  8px;
+    border-radius: 4px;
+}
+
+
+.navegador{
+    z-index: 300 ;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+
+   
+}
+
+.navegador .navegador-button{
+    background: rgba(0, 0, 0, 0.747);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
