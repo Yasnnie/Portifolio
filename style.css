@@ -25,7 +25,7 @@ nav {
     transition: 0.6s;
     padding: 20px 0;
     font-family: 'Inter', sans-serif;
-    z-index: 1000;
+    z-index: 1000000;
 }
 
 nav.sticky {
@@ -50,15 +50,18 @@ nav a {
 }
 
 /* STYLE CONTAINER GERAL*/
+
 .contaneir {
     height: 100%;
     width: 100%;
     background: black;
     font-family: 'Inter', sans-serif;
 }
+
 /*
 STYLE CONTAINER INICIO
 */
+
 #container-inicio {
     background: url(./img/image\ 3.png);
     background-size: cover;
@@ -117,9 +120,11 @@ STYLE CONTAINER INICIO
     transition: .25s ease-out;
     cursor: pointer;
 }
+
 /*
 STYLE CONTAINER SOBRE
 */
+
 #container-sobre {
     height: auto;
     background: white;
@@ -130,18 +135,38 @@ STYLE CONTAINER SOBRE
     padding: 8% 0 3% 0;
 }
 
-#container-sobre h1 {
+#titulo {
+    text-align: center;
+    position: relative;
+    z-index: 30000;
     font-size: 50px;
-    border: dashed 2px grey;
+    border: dashed 2px rgb(0, 0, 0);
     width: 170px;
-    display: block;
-    margin: 0 auto 30px auto;
+    margin: -2% auto 70px auto;
 }
 
 #foto {
     width: 23%;
     min-width: 300px;
     margin: 50px;
+    position: relative;
+    z-index: 30000;
+    border-radius: 10px;
+}
+
+.circle {
+    background: rgb(44, 44, 44);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    clip-path: circle(30% at 89% 13%);
+    margin-top: -8%;
+}
+
+#circle2 {
+    clip-path: circle(20% at 0) !important;
+    background: grey!important;
 }
 
 .background {
@@ -158,54 +183,64 @@ STYLE CONTAINER SOBRE
     align-items: center;
     justify-content: center;
     padding: 0 10%;
+    z-index: 3 !important;
 }
 
 .sobre-text {
     text-align: left;
-    width: 65%;
+    width: 60%;
+    z-index: 3 !important;
 }
 
 .sobre-text h2 {
     font-size: 45px;
     margin-bottom: 20px;
-
+    z-index: 3 !important;
 }
 
 .sobre-text p {
     text-align: justify;
     font-size: 18px;
 }
-.sobre-qualidades{
+
+.sobre-qualidades {
     width: 100%;
 }
-.sobre-qualidades h2{
+
+.sobre-qualidades h2, .formacao h2 {
     font-size: 45px;
-    padding: 5px 0 ;
+    padding: 5px 0;
     color: white;
     text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
     margin: 0 auto 30px auto;
 }
-.sobre-qualidades-caract
-{
 
+#h2-diferente {
+    margin-top: 40px !important;
+}
+
+.sobre-qualidades-caract {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.sobre-qualidades-caract a{
+.sobre-qualidades-caract p {
     font-size: 20px;
     margin: 10px 20px;
     background: black;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
 }
 
-.sobre-qualidades a:hover{
-    background: grey !important;
+.sobre-qualidades-caract p img {
+    margin-right: 5px;
 }
 
 
@@ -213,7 +248,7 @@ STYLE CONTAINER SOBRE
 STYLE FORMAÇÃO
 */
 
-.formacao{
+.formacao {
     background: white;
     font-family: 'Inter', sans-serif;
     text-align: center;
@@ -221,20 +256,15 @@ STYLE FORMAÇÃO
     padding: 0 0 150px 0;
 }
 
-.formacao h1{
-    font-size: 45px;
-    color: white;
-    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
-}
-
-.formacao-div{
+.formacao-div {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: -30px;
 }
 
-.formacao-div a{
+.formacao-div a {
     text-align: center;
     height: 250px;
     margin: 90px 20px;
@@ -243,30 +273,105 @@ STYLE FORMAÇÃO
     width: 300px;
     background: rgb(27, 27, 27);
     padding: 20px;
-    -webkit-box-reflect:below 2px linear-gradient(transparent, transparent, #0004);
-    transform-origin:center;
-    transform:perspective(800px) rotateY(25deg);
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
     transition: .3s;
 }
+
 .formacao-div:hover a {
-    opacity:0.3;
-  }
+    opacity: 0.3;
+}
 
-.formacao-div a:hover{
+.formacao-div a:hover {
     background: black;
-    transform:perspective(800px)       rotateY(0deg);
-    opacity:1;
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
     transition: .3s;
 }
 
-.formacao-div a img{
+.formacao-div a img {
     width: 100px;
     height: 100px;
 }
 
-
 /*
 STYLE CONTAINER HABILIDADES
 */
+#container-habilidades{
+    height: auto !important;
+    padding: 50px 0;
 
+    text-align: center;
+}
+
+#container-habilidades h1{
+    text-align: center;
+    position: relative;
+    z-index: 30000;
+    font-size: 50px;
+    color: grey;
+    border: dashed 2px grey;
+    width: 300px;
+    margin: 50px auto 20px auto;
+}
+#container-habilidades p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: grey;
+}
+.habilidades-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.habilidades-box {
+    background: rgb(32, 32, 32);
+    width: 400px;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border-top: solid 8px grey;
+
+}
+
+.habilidades-box-aux{
+    width: 100%;
+    padding: 0 40px;
+}
+
+.habilidades-start h2 {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.habiilidade-info {
+    opacity: 0;
+    width: 100%;  
+    transition: 0.5s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.habiilidade-info svg{
+    margin: 0 3px;
+}
+
+.habilidades-box:hover{
+    background: grey;
+    transition: .5s;
+}
+
+.habilidades-box:hover .habiilidade-info {
+    opacity: 1;
+    margin-top: 40px;
+    transition: 0.5s;
+}
 
