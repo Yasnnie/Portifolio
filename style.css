@@ -138,13 +138,13 @@ STYLE CONTAINER INICIO
 }
 
 .text-introducao a:hover {
-    color: orangered;
+    color: black;
     background: white;
     transition: .25s ease-out;
 }
 
 .text-introducao a:hover iframe {
-    filter: invert(64%) sepia(28%) saturate(7483%) hue-rotate(346deg) brightness(94%) contrast(85%);
+    filter: invert(100%) ;
     transition: .25s ease-out;
     cursor: pointer;
 }
@@ -330,7 +330,6 @@ STYLE CONTAINER HABILIDADES
 #container-habilidades{
     height: auto !important;
     padding: 50px 0;
-
     text-align: center;
 }
 
@@ -422,6 +421,7 @@ PROJETOS
     font-size: 50px;
     padding: 10px;
     color: orangered;
+    background: white;
     border: dashed 2px grey;
 }
 .slide{
@@ -429,7 +429,7 @@ PROJETOS
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: rgb(255, 255, 255);
+    background: url(./img/fundo3.png);
     clip-path: circle(0% at 0 50%);
 }
 .slide.active-slide{
@@ -508,3 +508,110 @@ PROJETOS
 .navegador .navegador-button.active-slide{
     background: grey;
 }
+
+/*
+Contato
+*/
+
+#contaneir-contato{
+    width: 100%;
+    height: 100%;
+    background: url(./img/fundo2.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.contaneir-contato-aux{
+    background: rgb(32, 32, 32);
+    display: block;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 30px 50px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.26);
+}
+
+.contaneir-contato-aux h1{
+    color: orangered;
+    margin-bottom: 20px;
+    border: dashed 2px grey;
+    padding: 10px;
+}
+
+input[type='text']{
+    padding: 10px 7px;
+    width: 300px;
+    color: white;
+    background: none;
+    margin: 12px 0px;
+    border-right: none;
+    border-left: none;
+    border-bottom: orangered 2px solid !important;
+    border-top: none;
+    place-content: orangered;
+}
+
+textarea{
+    color: white;
+    background: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: orangered 2px solid !important;
+    border-top: none;
+    height: 100px;
+    width: 300px;
+    padding: 10px 7px;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    }
+
+    textarea:focus, input:focus, select:focus, button:focus {
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+    } 
+    
+    #contaneir-contato ::-webkit-input-placeholder {
+        color: orangered;
+        opacity: 0.5;
+     }
+    
+     #contaneir-contato ::-webkit-scrollbar-track {
+        background: rgb(32, 32, 32);
+    }
+    #contaneir-contato ::-webkit-scrollbar {
+        width: 4px;
+        background: orangered;
+    }
+    #contaneir-contato ::-webkit-scrollbar-thumb {
+        background: orangered;
+    }
+
+    button{
+        border: none;
+        background: orangered;
+        color: white;
+        font-size: 22px;
+        padding: 8px 20px;
+        margin-top: 30px;
+        border-radius: 4px;
+        transition: .3s;
+        
+    }
+
+    button:hover{
+        background: rgb(167, 44, 0);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .contato-ou{
+        margin: 30px 0 20px 0;
+    }
+
+    #contaneir-contato a:hover{
+        filter: invert(40%) ;
+        transition: .3s;
+    }
