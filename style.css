@@ -382,7 +382,8 @@ PROJETOS
 */
 
 #contaneir-projetos{
-    height: auto !important;
+    height: 100%;
+    position: relative;
 }
 
 #projeto-titulo{
@@ -417,8 +418,9 @@ PROJETOS
 }
 
 .slide .slide-info {
+    z-index: 300;
     position: absolute;
-    z-index: 400;
+
     bottom: 25%;
     right: 30px;
     color:#ffff;
@@ -434,12 +436,13 @@ PROJETOS
 }
 
 .slide .slide-info p{
+    z-index: 300;
     text-align: justify;
     margin-bottom: 30px;
 }
 
 .slide .slide-info a{
-    
+    z-index: 300;
     margin-top: 10px;
     text-decoration: none;
     color: white;
@@ -450,15 +453,14 @@ PROJETOS
 
 
 .navegador{
-    z-index: 300 ;
+    z-index: 1;
     position: absolute;
+    bottom: 0px;
     display: flex;
-    height: 100%;
     width: 100%;
     justify-content: center;
-    align-items: flex-end;
 
-   
+
 }
 
 .navegador .navegador-button{
@@ -470,3 +472,7 @@ PROJETOS
     cursor: pointer;
 }
 
+
+.navegador .navegador-button.active-slide{
+    background: grey;
+}
