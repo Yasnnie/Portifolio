@@ -39,9 +39,10 @@ try {
 	$mail->AltBody = $text."----//// Por:".$nome."(".$email.")";
  
 	if($mail->send()) {
-       // header("Location: ../index.html");
+		header("Location: ../index.html");
 		echo 'Email enviado com sucesso';
 	} else {
+		header("Location: ../index.html");
 		echo 'Email nao enviado';
 		
 	}
