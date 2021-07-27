@@ -589,13 +589,15 @@
 
             <div>
                 <h2>Envie um e-mail:</h2>
-                <input type="text" placeholder="Seu Nome">
-                <br>
-                <input type="text" placeholder="Seu e-mail">
-                <br>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu texto aqui."></textarea>
-                <br>
-                <button>Enviar</button>
+                <form method="POST" action="./src/email.php">
+                    <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="Seu e-mail">
+                    <br>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Digite seu texto aqui."></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
                 <h2 class="contato-ou">OU</h2>
                 <div>
                     <a href="https://www.linkedin.com/in/yasmin-carvalho-targino-de-alencar-6980841a3/" target="_blank">
